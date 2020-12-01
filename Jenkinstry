@@ -15,10 +15,10 @@ pipeline {
  def scannerHome = tool 'SonarQube';
  withSonarQubeEnv() {
  sh "${tool("SonarQube")}/bin/sonar-scanner \
- -Dsonar.projectKey=OWASP \
+ -Dsonar.projectKey=OWASP2 \
  -Dsonar.sources=. \
  -Dsonar.host.url=http://192.168.2.130:9000/ \
- -Dsonar.login=a843a45e3d20900e0eed048512dc9ad2edf4635f"
+ -Dsonar.login=e5b7724ff390b631f3084d4c3982e4b21a1ca303"
  }
  }
  }
