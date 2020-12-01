@@ -17,8 +17,8 @@ pipeline {
  sh "${tool("SonarQube")}/bin/sonar-scanner \
  -Dsonar.projectKey=OWASP \
  -Dsonar.sources=. \
- -Dsonar.host.url=http://192.168.137.149:9000/ \
- -Dsonar.login=d52d88b8c1513275b6a6061eeb515b4b4c23227a"
+ -Dsonar.host.url=http://192.168.2.130:9000/ \
+ -Dsonar.login=a843a45e3d20900e0eed048512dc9ad2edf4635f"
  }
  }
  }
